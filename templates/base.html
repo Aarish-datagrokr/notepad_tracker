@@ -14,19 +14,9 @@
 		<title>{% block title%} {% endblock %}</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Notepad Tracker</a>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mx-auto">
-					<li class="nav-item {{ 'active' if homeIsActive == True }}">
-						<a class="nav-link" href="/">Home</a>
-				</ul>
-			</div>
-		</nav>
 		{% block content %} {% endblock %}
 		<footer>
 			<hr />
-			<p class="text-center">Notepad Tracker</p>
 		</footer>
 	</body>
 </html>
